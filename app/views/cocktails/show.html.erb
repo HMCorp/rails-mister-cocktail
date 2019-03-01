@@ -1,0 +1,15 @@
+<p>MY LANDING WEBPAGE FOR one SPECIFIC COCKTAIL</p>
+<p>A user can see the details of a given cocktail, with the dose needed for each ingredient</p>
+<p>Cocktail n° <%= @cocktail.id %> is the following one : <%= @cocktail.name %></p>
+<p>Let's check @doses : </p>
+
+
+<% @cocktail.doses.each do |dose| %>
+
+<p>Dose n° <%= dose.id %> is : <%= dose.description %> of <%= dose.ingredient.name %>
+<%= link_to "Edit dose", edit_cocktail_dose_path(dose.cocktail_id, dose.id) %>
+</p>
+
+<% end %>
+
+<p>Or click <%= link_to 'here', cocktails_path %> to go back to previous page</p>

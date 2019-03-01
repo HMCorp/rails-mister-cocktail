@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+
+body{
+  margin: 0;
+  background-color: #1d1e22;
+}
+
+h1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Arial";
+  text-transform: uppercase;
+  opacity: .2;
+  font-size: 70px;
+}
+

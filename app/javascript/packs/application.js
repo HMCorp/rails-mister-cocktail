@@ -9,3 +9,6 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+import { initParallax } from '../components/parallax';
+initParallax();

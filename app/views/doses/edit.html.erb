@@ -1,0 +1,8 @@
+<p>DELETE COCKTAIL DOSE</p>
+<p>You want to delete dose id = <%= @dose.id %></p>
+<p>Click <%= link_to 'here', cocktail_dose_path(@dose.cocktail_id, @dose.id),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %> to permanently remove dose</p>
+<p>Or click <%= link_to 'here', cocktails_path %> to cancel and go to previous page</p>
+
+
